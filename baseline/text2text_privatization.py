@@ -2,7 +2,6 @@ from sklearn.metrics import accuracy_score, r2_score, roc_auc_score
 from models.model import *
 from data.load_data import *
 from tqdm import tqdm
-import matplotlib.pyplot as plt
 from util.parameters import get_args
 from util.globals import *
 from util.utils import text2text_priv, get_pretrained_model, get_cls_embedding

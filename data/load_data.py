@@ -130,7 +130,7 @@ def get_dataset_sep(d_name, tokenizer, args, mode="all"):
     train_inputs, train_labels, test_inputs, test_labels = None, None, None, None
     if mode == "all" or mode == "train":
         train_inputs, train_labels = load_dataset_sep(config, tokenizer, args, "train")
-    # get test dataset
+    # get test datasetoad_dataset_sep
     if mode == "all" or mode == "test":
         test_inputs, test_labels = load_dataset_sep(config, tokenizer, args, "test")
     return train_inputs, train_labels, test_inputs, test_labels

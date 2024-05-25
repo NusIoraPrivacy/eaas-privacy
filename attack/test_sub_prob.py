@@ -13,6 +13,7 @@ def sample_noise_Chi(size, eta, device):
     noise = noise.to(device)
     return noise
 
+# token embedding inversion attack
 args = get_args()
 tokenizer, model = get_pretrained_model(args)
 model = model.to(args.device)
