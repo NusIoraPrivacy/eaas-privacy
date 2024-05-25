@@ -75,11 +75,12 @@ def get_args():
     parser.add_argument("--ft_denoise_sample_size", type=int, default=100,
                         help = "sample size to finetune denoise model")
     parser.add_argument("--mixed_data_config_list", type=str, 
-                        default=("tweet_offensive:train:5000, daily_dialog:train:5000, hate_speech18:train:5000, health_fact:train:5000, "
-                        "squad:train:5000, ag_news:train:5000, phrasebank:train:5000, banking77:train:5000, "
-                        "poem_sentiment:train:5000, tweet_sentiment:train:5000, tweet_emotion:train:5000, tweet_hate:train:5000, "
-                        "ade_corpus_v2:train:5000, sms_spam:train:5000, yelp_review_full:train:5000, app_reviews:train:5000, "
-                        "amazon_polarity:train:5000, rotten_tomatoes:train:5000, wikitext:train:5000, webtext:train:5000"),
+                        default=("tweet_sentiment:train:5000, tweet_offensive:train:5000, wikitext:train:5000"
+                        # ", health_fact:train:5000, tweet_sentiment:train:5000, squad:train:5000, ag_news:train:5000, phrasebank:train:5000, banking77:train:5000"
+                        # ", poem_sentiment:train:5000, tweet_offensive:train:5000, tweet_emotion:train:5000, tweet_hate:train:5000"
+                        # ", ade_corpus_v2:train:5000, sms_spam:train:5000, yelp_review_full:train:5000, app_reviews:train:5000"
+                        # ", amazon_polarity:train:5000, rotten_tomatoes:train:5000, hate_speech18:train:5000, webtext:train:5000"
+                        ),
                         help="List of datasets to mix in the format name:mode:sample_size separated by commas")
     # parser.add_argument("--mixed_data_config_list", type=str, 
     #                     default=("tweet_offensive:train:5000, daily_dialog:train:5000, hate_speech18:train:5000, health_fact:train:5000, "
